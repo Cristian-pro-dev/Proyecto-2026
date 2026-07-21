@@ -1,18 +1,9 @@
-nombre = input("Introduzca nombre del estudiante: ")
-calificacion = int(input("Introduzca su calificacion: "))
+contraseña = "M1Fam1l1"
 
-print("Alumno", nombre)
-print("Su calificacion es", calificacion)
+usuario = input("Ingrese la contraseña: ")
 
-if 90 <= calificacion <= 100:
-    print("Excelente")
-elif 80 <= calificacion <= 89:
-    print("Muy bien")
-elif 70 <= calificacion <= 79:
-    print("Bien")
-elif 60 <= calificacion <= 69:
-    print("Suficiente")
-elif 0 <= calificacion < 60:
-    print("Reprobado")
-else:
-    print("Calificacion invalida")
+while contraseña != usuario:
+    print("Contraseña incorrecta")
+    usuario = input("Ingrese de nuevo la contraseña: ")
+
+print("Bienvenido")

@@ -1,8 +1,9 @@
-materias = ["Calculo", "COE", "FFD", "Algebra lineal", "FP"]
+def promedio(lista):
+    return sum(lista) / len(lista)
 
-asignatura = input("Ingrese la materia que desea saber si esta en la lista: ")
+promedio = promedio([2, 3, 4, 5])
 
-if asignatura in materias:
-    print("Materia encontrada")
+if promedio >= 6:
+    print("Aprobado")
 else:
-    print("Materia no encontrada")
+    print("Reprobado")

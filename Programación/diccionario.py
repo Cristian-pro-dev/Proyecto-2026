@@ -7,15 +7,24 @@ def mostrar():
 
 def modificar():
     opcion = input("Ingrese el dato que quiere modificar: ")
-    estudiante[opcion] = input("Introduzca el nuevo valor: ")
+    if opcion in estudiante:
+        estudiante[opcion] = input("Nuevo valor: ")
+    else:
+        print("Ese dato no existe.")
 
 def agregar():
     opcion = input("Ingrese el dato que quiere agregar: ")
-    estudiante[opcion] = input("Introduzca el valor del nuevo dato: ")
+    if opcion in estudiante:
+        print("Ese dato ya existe.")
+    else:
+        estudiante[opcion] = input("Introduzca el valor del nuevo dato: ")
 
 def eliminar():
     opcion = input("Ingrese el dato que quiere eliminar: ")
-    del estudiante[opcion]
+    if opcion in estudiante:
+        del estudiante[opcion]
+    else:
+        print("Ese dato no existe.")
 
 respuesta = "S"
 
